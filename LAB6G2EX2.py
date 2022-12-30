@@ -1,3 +1,10 @@
+# This algorithm has a time complexity of O(n^2), where n is the number of points in the set.
+
+# This algorithm works by starting at a point on the convex hull,
+#  and then "wrapping" the points of the convex hull around the 
+#  starting point in a clockwise direction until it returns to the starting point
+
+
 def convex_hull(points):
   start = min(points, key=lambda p: p[0])
   hull = []
